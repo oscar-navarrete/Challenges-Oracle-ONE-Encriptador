@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges Oracle ONE - Encriptador de Texto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0675c8d2d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main class="main">
+
+        <header>
+            <img class="logo" src="/images/logo.png" alt="Logo">
+        </header>
+
+        <div class="seccion-input-text">
+            <textarea class="input-text" name="input" id="" cols="70" rows="10" placeholder="Ingresa el texto aqui" required="required" ></textarea>
+            
+            <h6>* Solo letras minúsculas y sin acentos</h6>
+            <div class="botones">
+                <button class="btn btn_encriptar" id="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn btn_desencriptar" id="boton_desencriptar" onclick="Desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="seccion_noencontrado" id="buscar">
+            <img class="img_muneco" src="/images/Muñeco.png" alt="imagen texto no encontrado">
+            <p>Ningún mensaje fue encontrado</p>
+            <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+        </div>                   
+
+        <div class="seccion-resultados" id="resultado">
+            <textarea class="input-text-resultado" name="" id="msjEncriptado" cols="70" rows="10"></textarea>
+            <button class="btn btn_copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="author">Oscar Navarrete Abarca</div>
+        <div class="follow-me">Follow me</div>
+        <div class="social-network">
+            <a href="https://www.linkedin.com/in/onavarretea/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/oscar-navarrete" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
